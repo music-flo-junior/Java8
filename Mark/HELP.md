@@ -27,3 +27,4 @@
   },
   "speakDeviceType": "ivi-volvo"
 }
+test

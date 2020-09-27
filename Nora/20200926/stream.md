@@ -130,8 +130,7 @@ ifPresent와 orElse메서드를 이용한다.
 > if(optionalValue.isPresent()) optionalValue.get().someMethod();                     
 
 - 옵션 값 다루기
-
 - 옵션 값 생성하기
-
 - flatMap을 이용해 옵션 값 함수 합성하기
-                                                                                                                                                                                                               
+
+                                                                                                                                                                                                     

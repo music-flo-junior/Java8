@@ -46,3 +46,17 @@ ifPresent와 orElse메서드를 이용한다.
 아무 일도 일어나지 않는다. count 메서드가 첫 번째 요소를 요청하면, filter메서드가 길이 > 12인 요소를 찾을 때 까지 요소들을 요청하기 시작한다.
 
 * 02 스트림 생성
+- 자바 8에서 Collection 인터페이스에 추가된 stream 메서드를 이용해 컬렉션을 스트림으로 바꿀 수 있다.
+> Stream<String> words = Stream.of(contents.split("[\\P{L}]+""));
+
+- of 메서드는 가변 인자 파라미터를 받기 때문에 인자 개수가 몇 개든 스트림을 생성할 수 있다.
+> Stream<String> song = Stream.of("gently","down","the","stream");
+
+- 배열의 일부에서 스트림을 생성하려면 Arrays.stream(array, from, to)를 사용한다.
+요소가 없는 스트림을 생성하려면 정적 Stream.empty 메서드를 사용한다.
+
+- Stream 인터페이스는 무한 스트림을 만드는 두가지 정적 메서드를 포함한다.
+1. generate 메서드는 인자 없는 함수를 받는다. 스트림 값이 필요할 떄는 이 함수를 호출해서 값을 생성한다.
+> 
+
+                                                                                                                                                                                                               

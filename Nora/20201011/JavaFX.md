@@ -143,5 +143,4 @@ billing.textProperty().bindBidirectional(shipping.textProperty());
 - ParallelTransition과 SequentialTransition 콤비네이터를 이용하면 트랜지션을 합성해 병렬 또는 순차적으로 수행할 수 있다.
 
 * 10 화려한 컨트롤
-- JavaFX는 스윙과 마찬가지로 콤보박스, 탭 페인, 테이블 지원은 물론이고 스윙에서 전혀 볼 수 없던 데이트 픽커, 어코디언 같은 사용자 인터페이스 컨트롤도 지원한다.                                                    
-                                                                                                                                                                
+- JavaFX는 스윙과 마찬가지로 콤보박스, 탭 페인, 테이블 지원은 물론이고 스윙에서 전혀 볼 수 없던 데이트 픽커, 어코디언 같은 사용자 인터페이스 컨트롤도 지원한다.                                                                                                                                                                                                                    

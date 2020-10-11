@@ -2,14 +2,14 @@
 - 반복자(lterator)는 특정 순회 전략을 내포하므로 효율적인 동시 실행을 방해한다.
 - 컬렉션, 배열, 발생기, 반복자로부터 스트림을 생성할 수 있다.
 - 요소를 선택하는데 filter를 사용하고, 요소를 변환하는데 map을 사용한다.
-- 스트림을 변환하는 다른 연산으로는 limit, distinict, sorted가 있다.
-- 스트림에서 결과를 얻으려면 count, max, min, finFirst 또는 findAny 같은 리덕션 연산자를 사용한다.
+- 스트림을 변환하는 다른 연산으로는 limit, distinct, sorted가 있다.
+- 스트림에서 결과를 얻으려면 count, max, min, findFirst 또는 findAny 같은 리덕션 연산자를 사용한다.
 이들 메서드 중 몇몇은 Optional 값을 리턴한다.
 - Optional 타입은 null 값을 다루는 안전한 대안을 목적으로 만들어졌다. Optional 타입을 안전하게 사용하려면 
 ifPresent와 orElse메서드를 이용한다.
 - 스트림 결과들을 컬렉션, 배열, 문자열 또는 맵으로 모을 수 있다.
 - Collectors 클래스의 groupingBy와 PartitioningBy 메서드는 스트림의 내용을 그룹으로 분할하고 각 그룹
-의 겨로가를 얻을 수 있게 해준다.
+의 결과 얻을 수 있게 해준다.
 - 기본 타입인 int, long, double용으로 특화된 스트림이 있다.
 - 병렬 스트림을 이용할 때는 부가 작용(side effect)을 반드시 피해야 하고, 순서 제약을 포기하는 방안도 고려한다.
 - 스트림 라이브러리를 사용하려면 몇 가지 함수형 인터페이스와 친숙해져야 한다.
@@ -17,7 +17,7 @@ ifPresent와 orElse메서드를 이용한다.
 * 01 반복에서 스트림 연산으로
 - 컬렉션을 처리할 때, 보통은 요소들을 순회하면서 각 요소를 대상으로 작업한다.
 
-- 자바8의 벑크 연산(bulk operation) 
+- 자바8의 벌크 연산(bulk operation) 
 > long count = words.stream().filter(w->w.length() > 12).count();
 > stream 메서드는 words 리스트의 스트림을 돌려준다.
 > filter 메서드는 12글자보다 긴 단어만 담은 다른 스트림을 리턴한다.
